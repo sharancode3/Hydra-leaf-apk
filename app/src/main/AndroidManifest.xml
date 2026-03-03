@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hydraleaf">
+
+    <application
+        android:name=".HydraLeafApplication"
+        android:allowBackup="true"
+        android:label="Hydra Leaf"
+        android:theme="@style/Theme.HydraLeaf">
+        <activity
+            android:name="com.example.hydraleaf.MainActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait"
+            android.configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android.resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
