@@ -39,8 +39,8 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = true
-            isShrinkResources = true
+            isMinifyEnabled = false
+            isShrinkResources = false
             buildConfigField("boolean", "SHOW_DEBUG_OVERLAY", "false")
             if (keystorePropertiesFile.exists()) {
                 signingConfig = signingConfigs.getByName("release")
